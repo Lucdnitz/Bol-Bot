@@ -1,0 +1,9 @@
+pysqlite3
+pantheon
+PyNaCl
+discord.py[voice]
+ffmpeg
+youtube-dl
+asyncio
+youtube-search
+requests
