@@ -468,5 +468,3 @@ class quiz(commands.Cog):
 
 def setup(client):
     client.add_cog(quiz(client))
-
-

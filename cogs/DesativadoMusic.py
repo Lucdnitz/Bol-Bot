@@ -23,7 +23,7 @@ class Music(commands.Cog):
         embed=discord.Embed(description="Comando desativado para manutenção.", colour=discord.Colour.orange())
         await ctx.send(embed=embed)
         
-    @commands.command(aliases=['tocar'], brief='Faz o bot tocar uma música.')
+    @commands.command(aliases=['tocar', 'p', 'PLAY', 'P'], brief='Faz o bot tocar uma música.')
     async def play(self, ctx):
         embed=discord.Embed(description="Comando desativado para manutenção.", colour=discord.Colour.orange())
         await ctx.send(embed=embed)

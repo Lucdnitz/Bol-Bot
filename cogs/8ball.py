@@ -4,12 +4,24 @@ import random
 import sqlite3
 import asyncio
 from discord import FFmpegPCMAudio
+from discord.ext.commands import bot
 from discord.utils import get
 
 class _8Ball(commands.Cog):
 
     def __init__(self, client):
         self.client = client
+
+
+    @commands.command()
+    async def guilds(self,ctx):
+        if ctx.message.author.id == 164390451045072896:
+            embed=discord.Embed(description=f"O bot está em {len(self.client.guilds)} servidores.", colour=discord.Colour.orange())
+            await ctx.send(embed=embed)
+        else:
+            embed=discord.Embed(description="Permissão insuficiente.", colour=discord.Colour.orange())
+            await ctx.send(embed=embed)
+
 
     @commands.command(aliases=['8ball'], brief="Comando que poderá dizer seu futuro.")
     async def _8ball(self, ctx, *, perg):
