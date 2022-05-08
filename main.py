@@ -51,4 +51,4 @@ for filename in os.listdir('./cogs'):
 
 
 
-bot.run('NzcxNjI4ODQ1NTMwMDg3NDQ0.X5u5XA.A7uovHW0zaDzbTibmRtE4ahXMBA')
+bot.run('')
