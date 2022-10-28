@@ -12,7 +12,7 @@ class lol(commands.Cog):
 
     @commands.command(aliases=['lsts','lolstatus'])
     async def lolStatus(self, ctx, *, nomeSum):
-        api_key = 'RGAPI-07babde7-357e-4e86-9889-0339ce6b6349'
+        api_key = 'SUA KEY'
         nome = nomeSum.replace(' ','%20')
         sumInfo = requests.get(f'https://br1.api.riotgames.com/lol/summoner/v4/summoners/by-name/{nome}?api_key={api_key}')
         try:
